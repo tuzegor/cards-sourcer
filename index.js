@@ -15,10 +15,7 @@ function clearActiveClasses() {
 }
 
 function randomBgColor() {
-  var x = Math.floor(Math.random() * 256);
-  var y = 100 + Math.floor(Math.random() * 256);
-  var z = 50 + Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  const bgColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 
   document.body.style.background = bgColor;
 }
